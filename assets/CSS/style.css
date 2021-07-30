@@ -1,0 +1,64 @@
+/*--------------------------------------------------------------
+# IMPORT'S
+--------------------------------------------------------------*/
+
+@import url(./header.css);
+@import url(./nav-menu.css);
+@import url(./credits.css);
+
+
+/*--------------------------------------------------------------
+# ROOT
+--------------------------------------------------------------*/
+
+:root{
+    --color-primary: hsl(348, 83%, 47%);
+    --color-secundary: hsl(0, 0%, 2%);
+    --color-third: hsl(0, 0%, 100%);
+}
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+    user-select: none;
+    font-family: "Open Sans", sans-serif;
+    background-color: var(--color-secundary);
+    color: var(--color-third);
+    position: relative;
+    background: transparent;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    background: var(--color-secundary) url("../img/bg.jpg") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+
+a{
+    color: var(--color-primary);
+}
+
+a:hover {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+}
+
+/* Media Query */
+
+@media (min-width: 1024px) {
+    body::before {
+    background-attachment: fixed;
+    }
+}
