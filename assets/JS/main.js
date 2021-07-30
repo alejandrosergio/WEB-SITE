@@ -55,7 +55,7 @@
 
     /* TYPING ANIMATION SCRIPT */
     var typed = new Typed(".typing",{
-      strings: [" Diseño Web", " Programación", " Informatica", " Desarrollo web", " Marketing digital"],
+      strings: [" Diseño Web", " Programación", " Informatica", " Desarrollo web", " Marketing digital", " Sistemas"],
       typeSpeed: 100,
       backSpeed: 60,
       loop: true

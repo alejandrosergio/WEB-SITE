@@ -1,0 +1,27 @@
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about-me .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--color-primary);
+}
+
+.about-me .content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about-me .content ul li {
+    padding-bottom: 10px;
+}
+
+.about-me .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: var(--color-primary);
+}
+
+.about-me .content p:last-child {
+    margin-bottom: 0;
+}
