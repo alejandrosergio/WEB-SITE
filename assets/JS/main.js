@@ -52,6 +52,14 @@
         }
       }
     });
+
+    /* TYPING ANIMATION SCRIPT */
+    var typed = new Typed(".typing",{
+      strings: [" Diseño Web", " Programación", " Informatica", " Desarrollo web", " Marketing digital"],
+      typeSpeed: 100,
+      backSpeed: 60,
+      loop: true
+    });
   
     // Activate/show sections on load with hash links
     if (window.location.hash) {

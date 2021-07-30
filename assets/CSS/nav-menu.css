@@ -3,26 +3,20 @@
 --------------------------------------------------------------*/
 
 /* Desktop Navigation */
-.nav-menu {
-    margin-top: -470px;
-    margin-left: 19.5%;
-}
 
 .nav-menu ul {
     display: flex;
-    margin: 0;
     padding: 0;
     list-style: none;
-}
-
-.nav-menu li + li {
-    margin-left: 30px;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -34%;
 }
 
 .nav-menu a {
     display: block;
     position: relative;
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.626);
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -38,18 +32,20 @@
     background-color: var(--color-primary);
     visibility: hidden;
     width: 0px;
-    transition: all 0.3s ease-in-out 0s;
+    transition: all 0.7s ease-in-out 0s;
 }
 
 .nav-menu a:hover:before,
 .nav-menu li:hover > a:before,
 .nav-menu .active > a:before {
     visibility: visible;
-    width: 25px;
+    width: 43px;
 }
 
-.nav-menu a:hover, .nav-menu .active > a, .nav-menu li:hover > a {
-    color: var(--color-primary);
+.nav-menu a:hover, 
+.nav-menu .active > a, 
+.nav-menu li:hover > a {
+    color: var(--color-third);
     text-decoration: none;
 }
 
@@ -179,11 +175,22 @@
 
 /* Media Query - Header Top */
 
+
+@media (max-width: 1199px) {
+
+    .nav-menu ul {
+        margin-top: -40%;
+    }
+
+}
+
+
 @media (max-width: 768px) {
     #header.header-top {
         height: 60px;
     }
-    #header.header-top h1 {
+
+    #header.header-top .text2 {
         font-size: 26px;
     }
 }

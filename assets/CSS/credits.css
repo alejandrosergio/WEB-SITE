@@ -11,6 +11,12 @@
     font-size: 13px;
     color: #fff;
     z-index: 999999;
+    transition: all 0.5s ease;
+}
+
+.credits p{
+    margin: 0;
+    padding: 0;
 }
 
 .credits a {
@@ -26,7 +32,9 @@
 @media (max-width: 992px) {
     .credits {
         text-align: center;
+        font-size: .75em;
         padding: 10px;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.811);
     }
+
 }

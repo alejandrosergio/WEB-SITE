@@ -12,36 +12,67 @@
 }
 
 #header * {
-    transition: ease-in-out 0.3s;
+    transition: ease-in-out 0.5s ease;
 }
 
-#header h1 {
-    font-size: 48px;
-    margin: 0;
-    padding: 0;
+#header .container{
+    width: 100%;
+    height: 90vh;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#header .container .text-1{
     line-height: 1;
-    font-weight: 700;
+    font-size: 1.2em;
+    font-weight: 400;
     font-family: "Poppins", sans-serif;
 }
 
-#header h1 a, 
-#header h1 a:hover {
-    color: var(--color-third);
-    line-height: 1;
+#header .container .text-2{
     display: inline-block;
+    font-size: 2.8em;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
 }
 
-#header h2 {
-    font-size: 24px;
-    margin-top: 20px;
-    color: var(--color-third);
+#header .container .text-3{
+    font-size: 1.5em;
 }
 
-#header h2 span {
-    color: var(--color-third);
-    border-bottom: 2px solid var(--color-primary);
-    padding-bottom: 6px;
+#header .container .text-3 .typing{
+    color: var(--color-primary);
 }
+
+@keyframes anim-shadow {
+    100%{
+        box-shadow: 0px 0px 15px 1px var(--color-primary);
+    }
+}
+
+#header .container a.cv{
+    background: var(--color-primary);
+    color: var(--color-third);
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: 1px solid transparent;
+    transition: all 0.3s ease;
+    margin-top: 3%;
+    width: 12em;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+}
+
+#header .container a.cv:hover{
+    color: var(--color-primary);
+    background: none;
+    border: 1px solid var(--color-primary);
+    box-shadow: 0px 0px 0px 1px var(--color-primary);
+    animation: anim-shadow .3s forwards;
+}
+
 
 #header img {
     padding: 0;
@@ -49,7 +80,7 @@
 }
 
 #header .social-links {
-    margin-top: 40px;
+    margin-top: 35px;
     display: flex;
 }
 
@@ -65,6 +96,7 @@
     border-radius: 50%;
     width: 40px;
     height: 40px;
+    transition: all 0.5s ease;
 }
 
 #header .social-links a:hover {
@@ -74,13 +106,13 @@
 /* Media Query */
 
 @media (max-width: 992px) {
-    #header h1 {
-        font-size: 36px;
+
+    #header .container .text-2{
+        font-size: 1.9em;
     }
 
-    #header h2 {
-        font-size: 20px;
-        line-height: 30px;
+    #header .container .text-3{
+        font-size: 1em;
     }
 
     #header .social-links {
@@ -91,6 +123,11 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+
+    #header .container a.cv{
+        margin-top: 6%;
+        font-size: .8em;
     }
 
 }
