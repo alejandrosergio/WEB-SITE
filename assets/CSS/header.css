@@ -21,6 +21,7 @@
     justify-content: center;
     display: flex;
     flex-direction: column;
+    margin-top: 10%;
 }
 
 #header .container .text-1{
