@@ -162,8 +162,8 @@
 }
 
 #header.header-top .text-2 {
-    font-size: 30px;
-    margin-right: auto;
+    width: 318px;
+    font-size: 25px;
 }
 
 #header.header-top .container {
@@ -171,11 +171,17 @@
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
     padding: 15;
+}
+
+#header.header-top .nav-menu{
+    width: 700px;
 }
 
 #header.header-top .nav-menu ul{
     margin: 0;
+    font-size: 15px;
 }
 
 /* Media Query - Header Top */
