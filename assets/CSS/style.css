@@ -10,6 +10,9 @@
 @import url(./skill.css);
 @import url(./interests.css);
 @import url(./testimonials.css);
+@import url(./services.css);
+@import url(./contact.css);
+@import url(./portfolioDetails.css);
 
 /*--------------------------------------------------------------
 # ROOT
@@ -22,7 +25,7 @@
 }
 
 /*--------------------------------------------------------------
-# General
+# GENERAL
 --------------------------------------------------------------*/
 
 body {
@@ -59,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway", sans-serif;
 }
 
-/* Media Query */
+/* MEDIA QUERY */
 
 @media (min-width: 1024px) {
     body::before {
