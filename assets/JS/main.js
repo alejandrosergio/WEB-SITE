@@ -1,6 +1,16 @@
 !(function($) {
     "use strict";
 
+      //Disable cut copy paste
+      $('body').bind('cut copy paste', function (e) {
+        e.preventDefault();
+    });
+  
+    //Disable mouse right click
+    $("body").on("contextmenu",function(e){
+        return false;
+    });
+
     // Nav Menu
     $(document).on('click', '.nav-menu a, .mobile-nav a', function(e) {
       if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
@@ -81,7 +91,7 @@
         class: 'mobile-nav d-lg-none'
       });
       $('body').append($mobile_nav);
-      $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none"><i class="icofont-navigation-menu"></i></button>');
+      $('body').prepend('<button type="button" class="mobile-nav-toggle d-lg-none animate__animated animate__fadeInUpBig"><i class="icofont-navigation-menu"></i></button>');
       $('body').append('<div class="mobile-nav-overly"></div>');
   
       $(document).on('click', '.mobile-nav-toggle', function(e) {

@@ -133,5 +133,5 @@ section .container {
     font-weight: 700;
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
-    color: #fff;
+    color: var(--color-third);
 }
