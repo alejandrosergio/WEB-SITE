@@ -1,0 +1,91 @@
+/*--------------------------------------------------------------
+# BUTTON MUSIC
+--------------------------------------------------------------*/
+
+
+.btn-music{
+    position: fixed;
+    z-index: 9999;
+    left: 2.5em;
+    bottom: 2em;
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary);
+    color: var(--color-third);
+    font-size: .9em;
+    cursor: pointer;
+    animation: signal 1s infinite;
+    font-weight: 900;
+}
+
+.btn-music:active{
+    transform: scale(.8);
+}
+
+.btn-music:active,
+.btn-music.active{
+    background: var(--color-third);
+    color: var(--color-primary);
+    animation: signal2 1s infinite;
+}
+
+.btn-music .popout-messag{
+    position: absolute;
+    padding: 7px;
+    border-radius: 7px;
+    left: 100%;
+    background: var(--color-primary);
+    color: var(--color-third);
+    margin: 1em;
+    visibility: hidden;
+}
+
+.btn-music.active .popout-messag {
+    background: var(--color-third);
+    color: var(--color-primary);
+    padding: 8;
+}
+
+.btn-music:hover > .popout-messag{
+    visibility: visible;
+}
+
+@keyframes signal{
+    0%{
+        box-shadow: 0 0 0 0 var(--color-primary);
+    }
+    100%{
+        box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+    }
+}
+
+@keyframes signal2{
+    0%{
+        box-shadow: 0 0 0 0 var(--color-third);
+    }
+    100%{
+        box-shadow: 0 0 0 8px rgba(0, 0, 0, 0);
+    }
+}
+
+@media (max-width: 992px) {
+    .btn-music{
+        bottom: 3.5em;
+    }
+}
+
+@media (max-width: 340px) {
+    .btn-music{
+        width: 30px;
+        height: 30px;
+    }
+
+    .popout-messag{
+        padding: 6px;
+        font-size: 10px;
+    }
+}

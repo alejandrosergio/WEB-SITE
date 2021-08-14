@@ -10,7 +10,7 @@
     text-align: right;
     font-size: 13px;
     color: var(--color-third);
-    z-index: 999999;
+    z-index: 999;
     transition: all 0.5s ease;
 }
 

@@ -1,8 +1,44 @@
 !(function($) {
     "use strict";
 
-      //Disable cut copy paste
-      $('body').bind('cut copy paste', function (e) {
+    // BUTTON MUSIC
+    const player = document.querySelector('.btn-music');
+    const audio = document.querySelector('audio');
+
+    var sound = false;
+
+    player.addEventListener('click', () => {
+        if( sound == false ){
+            reproducir();
+        }else{
+            pausar();
+        }
+    });
+
+    function reproducir(){
+        player.classList.add('active');
+        player.innerHTML = 
+        `
+        <div class="popout-messag">Detener</div>
+        <i class="icofont-ui-pause"></i>
+        `;
+        audio.play();
+        sound = true;
+    }
+
+    function pausar(){
+        player.classList.remove('active');
+        player.innerHTML = `
+        <div class="popout-messag">Reproducir</div>
+        <i class="icofont-ui-play"></i>
+        `;
+        audio.pause();
+        sound = false;
+    }
+    // BUTTON MUSIC
+
+    //Disable cut copy paste
+    $('body').bind('cut copy paste', function (e) {
         e.preventDefault();
     });
   

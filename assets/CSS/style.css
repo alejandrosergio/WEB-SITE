@@ -1,7 +1,7 @@
 /*--------------------------------------------------------------
 # IMPORT'S
 --------------------------------------------------------------*/
-
+@import url(./music.css);
 @import url(./header.css);
 @import url(./nav-menu.css);
 @import url(./about.css);
