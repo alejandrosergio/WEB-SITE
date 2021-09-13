@@ -5,7 +5,7 @@
 
 .btn-music{
     position: fixed;
-    z-index: 9999;
+    z-index: 9998;
     left: 2.5em;
     bottom: 2em;
     display: flex;
@@ -32,6 +32,7 @@
     color: var(--color-primary);
     animation: signal2 1s infinite;
 }
+
 
 .btn-music .popout-messag{
     position: absolute;
@@ -72,20 +73,25 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 900px) {
     .btn-music{
         bottom: 3.5em;
+        left: 1.5em;
     }
 }
 
 @media (max-width: 340px) {
     .btn-music{
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
     }
 
     .popout-messag{
         padding: 6px;
+        font-size: 10px;
+    }
+
+    .btn-music > i{
         font-size: 10px;
     }
 }
