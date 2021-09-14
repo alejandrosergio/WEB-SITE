@@ -11,6 +11,10 @@
     overflow-y: auto;
 }
 
+#header.hidden{
+    display: none;
+}
+
 #header * {
     transition: ease-in-out 0.5s ease;
 }

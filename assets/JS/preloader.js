@@ -9,7 +9,10 @@
     });
 
     var loader = document.getElementById("preloader");
+    var header = document.getElementById("header");
+    var nav = document.getElementById("nav");
 
     window.addEventListener("load", function(){
         loader.style.display = "none";
+        header.classList.remove("hidden");
     });
