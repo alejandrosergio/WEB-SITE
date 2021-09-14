@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
+
+#header.hidden{
+    display: none;
+}
+
 #header {
     height: 100vh;
     transition: ease-in-out 0.3s;
@@ -11,15 +16,12 @@
     overflow-y: auto;
 }
 
-#header.hidden{
-    display: none;
-}
-
 #header * {
     transition: ease-in-out 0.5s ease;
 }
 
 #header .container{
+    
     display: flex;
     justify-content: center;
     flex-direction: column;

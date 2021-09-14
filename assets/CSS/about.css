@@ -22,6 +22,27 @@
     color: var(--color-primary);
 }
 
+.about-me span.color {
+    color: var(--color-primary);
+}
+
+.about-me span.pointer {
+    cursor: pointer;
+}
+
+.about-me .content p {
+    text-align: justify;
+}
+
 .about-me .content p:last-child {
     margin-bottom: 0;
+}
+
+@media (max-width: 500px) {
+
+    .about-me .content h3 {
+        text-align: center;
+        font-size: 19px;
+    }
+
 }

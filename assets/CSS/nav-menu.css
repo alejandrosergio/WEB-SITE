@@ -8,7 +8,7 @@
     display: flex;
     padding: 0;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     margin-top: -33%;
 }
@@ -16,7 +16,7 @@
 .nav-menu a {
     display: block;
     position: relative;
-    color: rgba(255, 255, 255, 0.626);
+    color: rgba(255, 255, 255, 0.514);
     font-size: 16px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
@@ -39,7 +39,7 @@
 .nav-menu li:hover > a:before,
 .nav-menu .active > a:before {
     visibility: visible;
-    width: 43px;
+    width: 35px;
 }
 
 .nav-menu a:hover, 

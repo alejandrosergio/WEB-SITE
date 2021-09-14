@@ -41,7 +41,7 @@ body {
 body::before {
     content: "";
     position: fixed;
-    background: var(--color-secundary) url("") top right no-repeat;
+    background: var(--color-secundary) url("../img/bg.jpg") bottom right no-repeat;
     background-size: cover;
     left: 0;
     right: 0;
@@ -97,15 +97,6 @@ section .container {
     padding: 30px;
 }
 
-@media (max-width: 768px) {
-    section {
-    top: 120px;
-    }
-    section.section-show {
-    top: 80px;
-    }
-}
-
 .section-title h2 {
     font-size: 14px;
     font-weight: 500;
@@ -120,7 +111,7 @@ section .container {
 
 .section-title h2::after {
     content: "";
-    width: 120px;
+    width: 150px;
     height: 1px;
     display: inline-block;
     background: var(--color-primary);
@@ -135,4 +126,18 @@ section .container {
     text-transform: uppercase;
     font-family: "Poppins", sans-serif;
     color: var(--color-third);
+}
+
+@media (max-width: 768px) {
+    section {
+    top: 120px;
+    }
+
+    section.section-show {
+    top: 80px;
+    }
+
+    .section-title p {
+        font-size: 25px;
+    }
 }
