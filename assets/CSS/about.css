@@ -1,6 +1,11 @@
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
+
+.about-me.container > #desplegar{
+    display: none;
+}
+
 .about-me .content h3 {
     font-weight: 700;
     font-size: 26px;
@@ -26,11 +31,7 @@
     color: var(--color-primary);
 }
 
-.about-me span.pointer {
-    cursor: pointer;
-}
-
-.about-me .content p {
+.about-me p.justify {
     text-align: justify;
 }
 

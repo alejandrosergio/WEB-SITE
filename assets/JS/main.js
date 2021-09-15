@@ -1,6 +1,32 @@
 !(function($) {
     "use strict";
 
+
+    // LEER MAS
+    const mas = document.getElementById('mas');
+    const desplegar = document.getElementById('desplegar');
+    var ancho = screen.width;
+
+    mas.addEventListener('click', (e) => {
+      e.preventDefault();
+      desplegar.style.display = 'inline';
+      mas.style.display = 'none';
+    });
+
+    desplegar.addEventListener('click', (e) => {
+      e.preventDefault();
+      desplegar.style.display = 'none';
+      mas.style.display = 'inline';
+      if ( ancho < 800) {
+        window.scroll({
+          top: 1050,
+          behavior: 'smooth'
+        });
+      }
+    });
+    // LEER MAS
+
+
     // BUTTON MUSIC
     const player = document.querySelector('.btn-music');
     const audio = document.querySelector('audio');

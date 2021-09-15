@@ -94,7 +94,7 @@ section.section-show {
 
 section .container {
     background: rgba(0, 0, 0, 0.9);
-    padding: 30px;
+    padding: 1.87em;
 }
 
 .section-title h2 {
@@ -128,7 +128,33 @@ section .container {
     color: var(--color-third);
 }
 
-@media (max-width: 768px) {
+a.button_generic{
+    color: var(--color-primary);
+    background: hsla(0, 0%, 0%, 0.815);
+    padding: 5px 20px;
+    border-radius: 7px;
+    border: 1px solid var(--color-primary);
+    margin-top: 3%;
+    width: 12em;
+    font-size: 1em;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 0px 0px 0px 1px var(--color-primary);
+    transition: all 0.5s ease;
+    animation: anim-shadow .3s forwards;
+}
+
+a.button_generic:hover{
+    background: var(--color-primary);
+    color: var(--color-third);
+    border: 1px solid transparent;
+}
+
+a.button_generic:active{
+    transform: scale(.8);
+}
+
+@media (max-width: 800px) {
     section {
     top: 120px;
     }
