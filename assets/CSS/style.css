@@ -137,7 +137,6 @@ a.button_generic{
     color: var(--color-primary);
     background: hsla(0, 0%, 0%, 0.815);
     border: 1px solid transparent;
-    /**/
     padding: 5px 20px;
     border-radius: 7px;
     border: 1px solid var(--color-primary);
@@ -147,7 +146,7 @@ a.button_generic{
     text-align: center;
     font-weight: 600;
     box-shadow: 0px 0px 15px 1px var(--color-primary);
-    transition: .5s ease;
+    transition: all .5s ease !important;
 }
 
 a.button_generic:hover{
