@@ -97,6 +97,11 @@ section .container {
     padding: 1.87em;
 }
 
+section .container.containerTec{
+    padding: 0 1em 2em;
+    text-align: center;
+}
+
 .section-title h2 {
     font-size: 14px;
     font-weight: 500;
@@ -131,6 +136,8 @@ section .container {
 a.button_generic{
     color: var(--color-primary);
     background: hsla(0, 0%, 0%, 0.815);
+    border: 1px solid transparent;
+    /**/
     padding: 5px 20px;
     border-radius: 7px;
     border: 1px solid var(--color-primary);
@@ -139,15 +146,13 @@ a.button_generic{
     font-size: 1em;
     text-align: center;
     font-weight: 600;
-    box-shadow: 0px 0px 0px 1px var(--color-primary);
-    transition: all 0.5s ease;
-    animation: anim-shadow .3s forwards;
+    box-shadow: 0px 0px 15px 1px var(--color-primary);
+    transition: .5s ease;
 }
 
 a.button_generic:hover{
     background: var(--color-primary);
     color: var(--color-third);
-    border: 1px solid transparent;
 }
 
 a.button_generic:active{
@@ -166,4 +171,4 @@ a.button_generic:active{
     .section-title p {
         font-size: 25px;
     }
-}
+} 
