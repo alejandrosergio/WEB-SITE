@@ -1,6 +1,27 @@
 !(function($) {
     "use strict";
 
+
+    // MODAL TECLOGIAS
+    const blur = document.getElementById('about');
+    const blur2 = document.getElementById('header');
+    const verModal = document.getElementById('ver-tecno');
+    const cerrarModal = document.getElementById('modal-tecno');
+
+    verModal.addEventListener('click', (e) => {
+      e.preventDefault();
+      blur.classList.toggle('active');
+      blur2.classList.toggle('active');
+      cerrarModal.classList.toggle('active');
+    });
+
+    cerrarModal.addEventListener('click', (e) => {
+      e.preventDefault();
+      blur.classList.remove('active');
+      blur2.classList.remove('active');
+      cerrarModal.classList.remove('active');
+    });
+
     // SCROLL UP 
     function scrollTop(){
       const scrollTop = document.getElementById('scroll-top');

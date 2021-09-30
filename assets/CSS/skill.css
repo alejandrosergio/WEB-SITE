@@ -33,3 +33,43 @@
     transition: .9s;
     background-color: var(--color-primary);
 }
+
+.modal__container{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 600px;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+    background: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+#modal-tecno{
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 95%;
+    height: 87vh;
+    padding: 50px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.30);
+    background: rgba(0, 0, 0, 0.754);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
+    z-index: 99999;
+    border-radius: 10px;
+    border: 1px solid var(--color-primary);
+}
+
+#modal-tecno.active{
+    top: 50%;
+    visibility: visible;
+    opacity: 1;
+    transition: 0.5s;
+    overflow: hidden;
+}

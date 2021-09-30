@@ -2,6 +2,10 @@
 # About
 --------------------------------------------------------------*/
 
+#about.active{
+    filter: blur(20px);
+}
+
 .about-me.container > #desplegar{
     display: none;
 }
