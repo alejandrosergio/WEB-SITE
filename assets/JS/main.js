@@ -1,20 +1,12 @@
 !(function($) {
     "use strict";
 
-
-    // SCROLL DESING
-
-    $(window).scroll(function(){
-      var scroll = $(window).scrollTop(),
-      dh = $(document).height(),
-      wh = $(window).height();
-
-      var scrollPercent = (scroll / (dh-wh)) * 100;
-      $('#progressbar').css('height', scrollPercent + '%');
-
-    });
-
-    // SCROLL DESING
+    // SCROLL UP 
+    function scrollTop(){
+      const scrollTop = document.getElementById('scroll-top');
+      if(this.scrollY >= 200) scrollTop.classList.add('show-scroll'); else scrollTop.classList.remove('show-scroll')
+    }
+    window.addEventListener('scroll', scrollTop);
 
     // LEER MAS
     const mas = document.getElementById('mas');

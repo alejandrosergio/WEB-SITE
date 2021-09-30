@@ -29,6 +29,10 @@
 # GENERAL
 --------------------------------------------------------------*/
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     user-select: none;
     font-family: "Open Sans", sans-serif;
@@ -160,26 +164,45 @@ a.button_generic:active{
 }
 
 ::-webkit-scrollbar{
-    width: 5px;
-    background: var(--color-secundary);
+    display: none;
 }
 
-::-webkit-scrollbar-thumb {
-    background: linear-gradient(transparent, var(--color-primary));
-    border-radius: 6px;
-}
-
-
-body > #progressbar{
+/*--------------------------------------------------------------
+# SCROLL UP
+--------------------------------------------------------------*/
+.scrolltop{
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 5px;
-    border-radius: 10px;
-    background: linear-gradient( transparent, var(--color-primary));
-    z-index: 99999;
+    right: 2.5rem;
+    bottom: -5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem;
+    background: var(--color-primary);
+    border-radius: .4rem;
+    z-index: 9998;
+    transition: 1.2s;
+    visibility: hidden;
+    scroll-behavior: smooth;
 }
 
+.scrolltop_icon{
+    font-size: 1.2rem;
+    color: var(--color-third);
+}
+
+.show-scroll{
+    visibility: visible;
+    bottom: 2.7rem;
+}
+
+.scrolltop:hover{
+    opacity: 0.5;
+}
+
+/*--------------------------------------------------------------
+# MEDIS QUERY
+--------------------------------------------------------------*/
 @media (max-width: 800px) {
     section {
     top: 120px;
@@ -191,5 +214,9 @@ body > #progressbar{
 
     .section-title p {
         font-size: 25px;
+    }
+
+    .scrolltop{
+        right: 1rem;
     }
 } 
