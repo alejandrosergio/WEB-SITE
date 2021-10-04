@@ -2,7 +2,7 @@
 # Header
 --------------------------------------------------------------*/
 
-#header.hidden {
+#header.headerNone {
     display: none;
 }
 
