@@ -1,0 +1,273 @@
+.portafolio{
+    overflow: hidden;
+}
+
+.portafolio .container-fluid{
+    padding: 0;
+}
+
+.container-fluid .row .portafolio-nav{
+    width: 100%;
+    text-align: center;
+    margin: 30px 0 60px;
+}
+
+.container-fluid .row p.portafolio__parrafo{
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.container-fluid .row .portafolio-nav ul{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid .row .portafolio-nav ul li{
+    display: inline-block;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    position: relative;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    list-style: none;
+    cursor: pointer;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    text-transform: uppercase;
+    font-weight: 600;
+    border: 1px solid var(--color-primary);
+    color: var(--color-primary);
+    background: none;
+    box-shadow: 0px 0px 10px 1px var(--color-primary);
+}
+
+.container-fluid .row .portafolio-nav ul li:last-child{
+    margin: 0;
+}
+
+.container-fluid .row .portafolio-nav ul li.active,
+.container-fluid .row .portafolio-nav ul li:hover{
+    background: var(--color-primary);
+    color: var(--color-third);
+}
+
+.container-fluid .row .portafolio-nav ul li span{
+    position: absolute;
+    top: -37px;
+    border-radius: 5px;
+    line-height: 20px;
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+    padding: 2px 10px;
+    font-size: 12px;
+    transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    background: var(--color-primary);
+    color: var(--color-third);
+}
+
+.container-fluid .row .portafolio-nav ul li span::before{
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    content: '';
+    border-top: 5px solid;
+    border-right: 5px solid transparent;
+    border-left: 5px solid transparent;
+    margin-left: -5px;
+}
+
+.container-fluid .row .portafolio-nav ul li.active span,
+.container-fluid .row .portafolio-nav ul li:hover span{
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0%);
+}
+
+.container-fluid .row .portafolio-nav ul li i{
+    margin-right: 10px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.container-fluid .row .portafolio-nav ul li.active i,
+.container-fluid .row .portafolio-nav ul li:hover i{
+    color: var(--color-third);
+}
+
+.portafolio .portafolio-single{
+    position: relative;
+    transition: all .5s ease;
+    overflow: hidden;
+}
+
+.portafolio .portafolio-head{
+    width: 100%;
+}
+
+.portafolio .portafolio-head::before{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(5, 5, 5, .9);
+    content: '';
+    visibility: hidden;
+    transition: all .6 ease;
+    -webkit-transition: all .6 ease;
+    -moz-transition: all .6 ease;
+    transform:  translateX(-100%);
+    -webkit-transform: translateX(-100%);
+    -moz-transform: translateX(-100%);
+    left: 0;
+    z-index: 11;
+}
+
+.portafolio .portafolio-single:hover .portafolio-head::before{ 
+    visibility: visible;
+    transform: translateX(0%);
+    -webkit-transform: translateX(0%);
+    -moz-transform: translateX(0%);
+    cursor: pointer;
+}
+
+.portafolio .portafolio-head img{
+    width: 100%;
+    z-index: 10;
+}
+
+@supports(object-fit: cover){
+    .portafolio .portafolio-head{
+        height: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }
+}
+
+.portafolio .portafolio-single:hover img{
+    transform: scale(1.1);
+}
+
+.portafolio .portafolio-hover{
+    position: absolute;
+    top: 0;
+    z-index: 20;
+    color: var(--color-third);
+    top: 50%;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    opacity: 0;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.portafolio .portafolio-single:hover .portafolio-hover{
+    opacity: 1;
+    visibility: visible;
+}
+
+.portafolio .portafolio-hover .h4{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 20px;
+    margin: 5px 0 15px;
+    position: relative;
+    top: -20px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+.portafolio .portafolio-single:hover h4{
+    top: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.portafolio .portafolio-hover p{
+    position: relative;
+    bottom: -20px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+.portafolio .portafolio-single:hover p{
+    bottom: 0;
+}
+
+.portafolio .portafolio-hover span{
+    font-size: 16px;
+    display: block;
+    font-style: italic;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    color: var(--color-primary);
+}
+
+.portafolio .portafolio-hover p{
+    color: var(--color-third);
+}
+
+.portafolio .portafolio-hover h4 a{
+    color: var(--color-third);
+}
+
+.portafolio .portafolio-hover .button{
+    margin-top: 15px;
+    position: relative;
+    bottom: -20px;
+    transition: all 1s ease;
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+}
+
+.portafolio .portafolio-hover .button a{
+    background: var(--color-primary);
+    color: var(--color-third);
+    display: inline-block;
+    margin: 0 5px;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    transition: all .5s ease;
+    -webkit-transition: all .5s ease;
+    -moz-transition: all .5s ease;
+}
+
+.portafolio .portafolio-hover .button a:hover{
+    color: var(--color-primary);
+    background: var(--color-third);
+}
+
+.portafolio .portafolio-hover .button a.color{
+    color: var(--color-primary);
+    background: var(--color-third);
+}
+
+.portafolio .container-fluid .row .portafolio-inner{
+    width: 100%;
+    height: 100%;
+}
+
+/*  */
+
+.portafolio .container-fluid .isotop-active{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}

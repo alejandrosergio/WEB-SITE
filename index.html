@@ -48,7 +48,7 @@
 <!-- --============ BUTTON MUSIC ============-- -->
 <div class="button_music">
     <audio src="./assets/sound/sonido.mp3"></audio>
-    <span class="btn-music">
+    <span class="btn-music" title="música">
         <div class="popout-messag">Reproducir</div>
         <i class="icofont-ui-play animate__animated animate__rotateIn"></i>
     </span>
@@ -64,14 +64,14 @@
         <h2  class="text-3 animate__animated animate__backInRight">Soy apasionado en <span class="typing"></span> </h2>
         <!-- social-links -->
         <div class="social-links animate__animated animate__backInDown">
-            <a href="mailto:alejandro.seeik@gmail.com" target="_BLANCK"><i class="icofont-email"></i></a>
-            <a href="https://twitter.com/AlejandroSeeik" target="_BLANCK"><i class="icofont-twitter"></i></a>
-            <a href="https://www.facebook.com/alejandroseeik/" target="_BLANCK"><i class="icofont-facebook"></i></a>
-            <a href="https://www.instagram.com/alejandro_seeik/" target="_BLANCK"><i class="icofont-instagram"></i></a>
-            <a href="https://www.linkedin.com/in/alejandro-seeik-153a3a1b3/" target="_BLANCK"><i class="icofont-linkedin"></i></a>
-            <a href="https://github.com/alejandrosergio/" target="_BLANCK"><i class="icofont-github"></i></a>
-            <a href="https://www.youtube.com/channel/UC0xXPyPKqFq2GWt9O-jhxwg" target="_BLANCK"><i class="icofont-youtube"></i></a>
-            <a href="https://www.youtube.com/channel/UC0xXPyPKqFq2GWt9O-jhxwg" target="_BLANCK"><i class="icofont-youtube-play"></i></a>
+            <a href="mailto:alejandro.seeik@gmail.com" target="_BLANCK" title="EMAIL"><i class="icofont-email"></i></a>
+            <a href="https://twitter.com/AlejandroSeeik" target="_BLANCK" title="TWITTER"><i class="icofont-twitter"></i></a>
+            <a href="https://www.facebook.com/alejandroseeik/" target="_BLANCK" title="FACEBOOK"><i class="icofont-facebook"></i></a>
+            <a href="https://www.instagram.com/alejandro_seeik/" target="_BLANCK" title="INSTAGRAM"><i class="icofont-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/alejandro-seeik-153a3a1b3/" target="_BLANCK" title="LINKEDIN"><i class="icofont-linkedin"></i></a>
+            <a href="https://github.com/alejandrosergio/" target="_BLANCK" title="GITHUB"><i class="icofont-github"></i></a>
+            <a href="https://www.youtube.com/channel/UC0xXPyPKqFq2GWt9O-jhxwg" target="_BLANCK" title="YOUTUBE 1"><i class="icofont-youtube"></i></a>
+            <a href="https://www.youtube.com/channel/UCkCO7OKwqz4xOPz2dMkVvDw" target="_BLANCK" title="YOUTUBE 2"><i class="icofont-youtube-play"></i></a>
         </div>
         <!-- navigation-menu -->
         <nav class="nav-menu d-none d-lg-block animate__animated animate__fadeInUpBig">
@@ -85,7 +85,7 @@
                 <li><a href="#join"> Unirte </a></li>
             </ul>
         </nav>
-        <a href="#" target="_BLANK" class="button_generic animate__animated animate__zoomInDown">Curriculum-Vitae</a>
+        <a href="https://alejandrosergio.github.io/Curriculum-vitae/" target="_BLANK" class="button_generic animate__animated animate__zoomInDown" title="Curriculum Vitae">Curriculum-Vitae</a>
     </div>
 </header>
 <!-- --============ END HEADER ============-- -->
@@ -527,8 +527,72 @@
             <p>Mi Portafolio</p>
         </div>
 
-        <div class="row">
-            
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <p class="portafolio__parrafo font-italic">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iure nisi veniam ullam similique sint labore nesciunt quo, debitis sit consectetur architecto facere iste quas, laborum doloremque ad perferendis molestiae reiciendis...</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="portafolio-nav">
+                        <ul>
+                            <li class="active" data-filter="*">
+                                <span>15</span><i class="icofont-briefcase"></i>All Work
+                            </li>
+                            <li data-filter=".development">
+                                <span>03</span><i class="icofont-brand-designbump"></i>Web Development
+                            </li>
+                            <li data-filter=".desing">
+                                <span>02</span><i class="icofont-unique-idea"></i>Web Design
+                            </li>
+                            <li data-filter=".html5">
+                                <span>06</span><i class="icofont-file-html5"></i>Web Design
+                            </li>
+                            <li data-filter=".wordpress">
+                                <span>04</span><i class="icofont-brand-wordpress"></i>Wordpress
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="portafolio-inner">
+                        <div class="row stylex">
+                            <div class="isotop-active">
+                                <div class="max development col-md-6 col-sm-12 col-xs-12 col-fix">
+                                    <div class="portafolio-single">
+                                        <div class="portafolio-head">
+                                            <img src="./assets/img/portafolio/website.jpg">
+                                        </div>
+                                        <div class="portafolio-hover">
+                                            <h4><span> Web design </span> <a href=""> Proyect Name Here </a></h4>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis officia velit minima! Dolorum, iste?</p>
+                                            <div class="button">
+                                                <a href="./assets/img/portafolio/website.jpg" data-fancybox="gallery" title="VER WEB"><i class="icofont-search-2"></i></a>
+                                                <a href="#" class="color" data-fancybox="gallery" title="COPIAR LINK WEB"><i class="icofont-external-link"></i></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="max development col-md-6 col-sm-12 col-xs-12 col-fix">
+                                    <div class="portafolio-single">
+                                        <div class="portafolio-head">
+                                            <img src="./assets/img/portafolio/website.jpg">
+                                        </div>
+                                        <div class="portafolio-hover">
+                                            <h4><span> Web design </span> <a href=""> Proyect Name Here </a></h4>
+                                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis officia velit minima! Dolorum, iste?</p>
+                                            <div class="button">
+                                                <a href="./assets/img/portafolio/website.jpg" data-fancybox="gallery" title="VER WEB"><i class="icofont-search-2"></i></a>
+                                                <a href="#" class="color" data-fancybox="gallery" title="COPIAR LINK WEB"><i class="icofont-external-link"></i></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
     </div>
@@ -658,7 +722,7 @@
 <!-- --============ FOTTER ============-- -->
 <footer>
     <div class="credits animate__animated animate__flip">
-        <p>Designed by <a href="./assets/pdf/DerechosAutor.pdf" download="DerechosAutor"> AlejandroSeeik</a> | © 2021 All rights reserved </p>
+        <p>Designed by <a href="./assets/pdf/DerechosAutor.pdf" title="Derechos Autor" download="DerechosAutor"> AlejandroSeeik</a> | © 2021 All rights reserved </p>
     </div>
 </footer>
 <!-- --============ END FOTTER ============-- -->
