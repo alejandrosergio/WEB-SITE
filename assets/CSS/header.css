@@ -17,7 +17,7 @@
 }
 
 #header.active {
-    filter: blur(20px);
+    display: none;
 }
 
 #header * {

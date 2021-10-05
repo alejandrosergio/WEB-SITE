@@ -171,6 +171,11 @@ a.button_generic:active{
 /*--------------------------------------------------------------
 # SCROLL UP
 --------------------------------------------------------------*/
+
+#scroll-top.active{
+    display: none;
+}
+
 .scrolltop{
     position: fixed;
     right: 2.5rem;

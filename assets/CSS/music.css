@@ -2,6 +2,9 @@
 # BUTTON MUSIC
 --------------------------------------------------------------*/
 
+.button_music.active{
+    display: none;
+}
 
 .btn-music{
     position: fixed;

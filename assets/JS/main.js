@@ -17,24 +17,40 @@ window.addEventListener("load", function(){
   header.classList.remove("headerNone");
 
   !(function($) {
+
       // MODAL TECLOGIAS
       const blur = document.getElementById('about');
-      const blur2 = document.getElementById('header');
+      const none = document.getElementById('header');
+      const btnUp = document.getElementById('scroll-top');
+      const btnMusic = document.getElementById('button_music');
+      //
       const verModal = document.getElementById('ver-tecno');
       const cerrarModal = document.getElementById('modal-tecno');
 
       verModal.addEventListener('click', (e) => {
         e.preventDefault();
         blur.classList.toggle('active');
-        blur2.classList.toggle('active');
+        none.classList.toggle('active');
+        btnUp.classList.toggle('active');
+        btnMusic.classList.toggle('active');
         cerrarModal.classList.toggle('active');
+        $('body').css({
+          'overflow': 'hidden',
+          'height': '100%'
+        });
       });
 
       cerrarModal.addEventListener('click', (e) => {
         e.preventDefault();
         blur.classList.remove('active');
-        blur2.classList.remove('active');
+        none.classList.remove('active');
+        btnUp.classList.remove('active');
+        btnMusic.classList.remove('active');
         cerrarModal.classList.remove('active');
+        $('body').css({
+          'overflow': 'visible',
+          'height': '100%'
+        });
       });
 
       // SCROLL UP 
