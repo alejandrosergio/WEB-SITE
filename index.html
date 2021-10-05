@@ -28,6 +28,7 @@
         <link href="./assets/plugins/owl.carousel/assets/owl.carousel.min.css"  rel="stylesheet">
         <link href="./assets/plugins/boxicons/css/boxicons.min.css"             rel="stylesheet">
         <link href="./assets/plugins/venobox/venobox.min.css"                   rel="stylesheet">
+        <link href="./assets/plugins/swiper/css/swiper-bundle.min.css"          rel="stylesheet">
 
     <!-- TEMPLATE MAIN CSS -->
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -447,7 +448,46 @@
 
 <div id="modal-tecno">
     <div class="container__modal">
-        <a href="#" class="button_generic">Cerrar ventana</a>
+        <a href="#" class="button_generic cerrar__modal" title="CERRAR VENTANA"><i class="icofont-brand-nexus"></i></a>
+        <div class="container_m">
+            <div class="section-title">
+                <h3>Tecnologias</h3>
+                <span class="section-separator"></span>
+                <p>Total tecnologias con las que he tenido la oportunidad de desarrollar aplicativos y paginas web...</p>
+            </div>
+        </div>
+        <div class="tecnologias-carousel-wrap">
+            <div class="listing-caroucel-button listing-carousel-button-next" title="SIGUIENTE"><i class="icofont-swoosh-right"></i></div>
+            <div class="listing-caroucel-button listing-carousel-button-prev" title="ANTERIOR"><i class="icofont-swoosh-left"></i></div>
+            <div class="tecnologias-carousel">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="tecno-item">
+                                <div class="tecno-img"><img src="./assets/img/tecnologias/html5.png"></div>
+                                <div class="tecnologias-text-before"><i class="icofont-quote-left"></i></div>
+                                <div class="tecnologias-text">
+                                    <div class="listing-rating">
+                                        <i class="icofont-star"></i>
+                                        <i class="icofont-star"></i>
+                                        <i class="icofont-star"></i>
+                                        <i class="icofont-star"></i>
+                                        <i class="icofont-star"></i>
+                                    </div>
+                                    <a href="#" class="text-link"></a>
+                                        <div class="tecnologia-imagen">
+                                            <h3>HTML5</h3>
+                                        </div>
+                                    </div>
+                                    <div class="tecnologias-text-after"><i class="icofont-quote-right"></i></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tc-pagination"></div>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -736,8 +776,8 @@
 
 <!-- SCRIPT'S -->
 
-    <!-- TEMPLATE MAIN JS FILES -->
     <script src="./assets/plugins/typed/typed.min.js"></script>
+    <!-- TEMPLATE MAIN JS FILES -->
     <script src="./assets/JS/main.js"></script>
 
     <!-- PLUGINS JS FILES -->
@@ -749,7 +789,7 @@
     <script src="./assets/plugins/owl.carousel/owl.carousel.min.js"></script>
     <script src="./assets/plugins/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="./assets/plugins/venobox/venobox.min.js"></script>
-    <!-- /// -->
+    <script src="./assets/plugins/swiper/js/swiper-bundle.min.js"></script>
     <script src="./assets/js/validateForm.js"></script>
 
 </body>

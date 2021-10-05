@@ -55,7 +55,7 @@
     transform: translate(-50%, -50%);
     width: 95%;
     height: 87vh;
-    padding: 30px;
+    padding: 20px;
     box-shadow: 0 5px 30px rgba(0,0,0,0.30);
     background: rgba(0, 0, 0, 0.754);
     visibility: hidden;
@@ -78,9 +78,195 @@
 }
 
 #modal-tecno .container__modal{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+
+.container__modal .cerrar__modal{
+    cursor: pointer;
+    position: absolute;
+    width: 2em;
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 100;
+    margin: 0;
+}
+
+/*  */
+
+.container__modal .container_m{
+    float: left;
+    position: relative;
+    padding: 10px 0;
+    z-index: 1;
+    width: 100%;
+}
+
+.container__modal .container_m .section-title p{
+    color: var(--color-third);
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 550px;
+    margin: 0 auto;
+}
+
+.container__modal .container_m .section-title h3{
+    float: left;
+    width: 100%;
+    text-align: center;
+    color: var(--color-primary);
+    font-size: 2em;
+}
+
+.container__modal .container_m .section-title .section-separator{
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: 0 0 25px;
+}
+
+.container__modal .container_m .section-title .section-separator::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 120px;
+    border-radius: 3px;
+    z-index: 2;
+    background: var(--color-primary);
+    margin-left: -60px;
+}
+
+.swiper-container{
     width: 100%;
     height: 100%;
+}
+
+.listing-caroucel-button{
+    position: absolute;
+    top: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-top: -15px;
+    z-index: 100;
+    cursor: pointer;
+    color: var(--color-third);
+    border: 1px solid var(--color-primary);
+    box-shadow: 0px 0px 10px 1px var(--color-primary);
+    transition: all 200ms linear;
+    outline: none;
+}
+
+.listing-caroucel-button:hover {
+    color: var(--color-third);
+    background: var(--color-primary);
+    border: 1px solid var(--color-primary);
+}
+
+.listing-caroucel-button.listing-carousel-button-next{
+    right: -30px;
+    padding-right: 24px;
+    border-radius: 60px 0 0 60px;
+}
+
+.listing-caroucel-button.listing-carousel-button-prev{
+    left: -30px;
+    padding-left: 24px;
+    border-radius: 0 60px 60px 0;
+}
+
+.listing-caroucel-button.listing-carousel-button-next:hover{
+    right: -15px;
+}
+
+.listing-caroucel-button.listing-carousel-button-prev:hover{
+    left: -15px;
+}
+
+.listing-caroucel-button.listing-carousel-button-prev i,
+.listing-caroucel-button.listing-carousel-button-next i{
+    font-size: 1.5em;
+}
+
+.tecno-item{
+    transition: all .5s ease-in-out;
+    transform: scale(0.9);
+    opacity: 0.9;
+}
+
+.listing-rating i{
+    color: hsl(56, 98%, 52%);
+    font-size: 2em;
+}
+
+.tecnologias-text{
+    padding: 100px 50px 75px;
+    overflow: hidden;
+    background: var(--color-secundary);
+    border: 1px solid var(--color-primary);
+    border-radius: 10px;
+    transition: all .3s ease-in-out;
+    margin-top: 6em;
+}
+
+.tecnologias-text-after{
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: var(--color-third);
+    opacity: .3;
+    font-size: 35px;
+    transition: all 400ms linear;
+    bottom: 25px;
+    right: 30px;
+}
+
+.tecnologias-text-before{
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    position: absolute;
+    color: var(--color-third);
+    opacity: .3;
+    font-size: 35px;
+    transition: all 400ms linear;
+    top: 25px;
+    left: 30px;
+}
+
+.tecnologias-text .listing-rating{
+    float: none;
+    display: inline-block;
+    margin-bottom: 12px;
+}
+
+.tecnologia-text h3{
+    font-weight: 900;
+    color: var(--color-primary);
+    font-size: 18px;
+}
+
+.tecnologias-carousel .swiper-slide{
+    padding: 30px 0;
+}
+
+.tecno-img{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    z-index: 20;
+    border-radius: 100%;
+}
+
+.tecno-img img{
+    position: absolute;
+    width: 35%;
+    height: 170%;
+    border-radius: 50%;
+    border: 6px solid var(--color-primary);
+    box-shadow: 0px 0px 10px 1px var(--color-primary);
+    margin: 0 0 0 10em;
 }

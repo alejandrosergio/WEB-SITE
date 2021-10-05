@@ -30,17 +30,24 @@
 # GENERAL
 --------------------------------------------------------------*/
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
 html{
     scroll-behavior: smooth;
+    user-select: none;
 }
 
 body {
-    user-select: none;
     font-family: "Open Sans", sans-serif;
-    background-color: var(--color-secundary);
+    background: var(--color-secundary);
     color: var(--color-third);
     position: relative;
-    background: transparent;
     overflow-x: hidden;
 }
 
@@ -66,7 +73,7 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: "Raleway", sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 /* MEDIA QUERY */
