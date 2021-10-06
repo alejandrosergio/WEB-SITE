@@ -26,6 +26,7 @@ window.addEventListener("load", function(){
       //
       const verModal = document.getElementById('ver-tecno');
       const cerrarModal = document.getElementById('modal-tecno');
+      const cerrarModalActive = document.getElementById('modal-tecno-active');
 
       verModal.addEventListener('click', (e) => {
         e.preventDefault();
@@ -40,7 +41,7 @@ window.addEventListener("load", function(){
         });
       });
 
-      cerrarModal.addEventListener('click', (e) => {
+      cerrarModalActive.addEventListener('click', (e) => {
         e.preventDefault();
         blur.classList.remove('active');
         none.classList.remove('active');
